@@ -5,7 +5,7 @@ void PrintIntroduction()
     std::cout << "\n\nYou are an adventurer who needs to solve the puzzle to open the mystical portal\n";
     std::cout << "Enter the correct numbers to solve the puzzle to open the portal\n\n";
 }
-void PlayGame()
+bool PlayGame()
 {
      //Create the start of a game that asks an adventurer to solve the puzzle based on the sum and products of the variables provided
     PrintIntroduction();
@@ -33,17 +33,19 @@ void PlayGame()
     if (GuessSum == PuzzleSum && GuessProduct == PuzzleProduct)
     {
         std::cout << "\nYou solved the puzzle!";
+        return true;
     }
     else
     {
         std::cout << "\nYou solved incorrectly...";
+        return false;
     }
 }
 int main()
 {
     while(true)
     {
-        PlayGame();
+        bool bLevelComplete = PlayGame();
         std::cin.clear(); //Clears errors
         std::cin.ignore(); 
     }
