@@ -1,10 +1,14 @@
 #include <iostream>
 
+void PrintIntroduction()
+{
+    std::cout << "You are an adventurer who needs to solve the puzzle to open the mystical portal\n";
+    std::cout << "Enter the correct numbers to solve the puzzle to open the portal\n\n";
+}
 void PLayGame()
 {
      //Create the start of a game that asks an adventurer to solve the puzzle based on the sum and products of the variables provided
-    std::cout << "You are an adventurer who needs to solve the puzzle to open the mystical portal\n";
-    std::cout << "Enter the correct numbers to solve the puzzle to open the portal\n\n";
+    PrintIntroduction();
 
     const int PuzzleA = 4;
     const int PuzzleB = 3;
