@@ -33,12 +33,12 @@ bool PlayGame(int Difficulty)
     //Use if else statement to let player know if they're correct or incorrect
     if (GuessSum == PuzzleSum && GuessProduct == PuzzleProduct)
     {
-        std::cout << "\nYou solved the puzzle!";
+        std::cout << "\n*** You solved the first level! Keep going ***";
         return true;
     }
     else
     {
-        std::cout << "\nYou solved incorrectly...";
+        std::cout << "\n*** You solved incorrectly... But don't give up! Try again! ***";
         return false;
     }
 }
@@ -46,7 +46,7 @@ int main()
 {
     int LevelDifficulty = 1;
     int const MaxLevel = 10;
-    
+
     while (LevelDifficulty <= MaxLevel)
     {
         bool bLevelComplete = PlayGame(LevelDifficulty);
@@ -58,6 +58,6 @@ int main()
             ++LevelDifficulty;
         } 
     }
-
+    std::cout << "\n*** Great work adventurer! You have successfully completed all levels and opened the portal! ***\n";
     return 0;
 }
