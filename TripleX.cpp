@@ -33,5 +33,11 @@ int main()
         std::cout << "You solved the puzzle!";
     }
 
+    else
+    {
+        std::cout << "You solved incorrectly...";
+    }
+    
+
     return 0;
 }
