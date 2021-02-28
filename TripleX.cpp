@@ -5,5 +5,12 @@ int main()
     std::cout << std::endl;
     std::cout << "Enter the correct numbers to solve the puzzle to open the portal";
 
+    const int a = 4;
+    const int b = 3;
+    const int c = 2;
+
+    const int sum = a + b + c;
+    const int product = a * b * c;
+
     return 0;
 }
