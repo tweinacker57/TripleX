@@ -6,18 +6,18 @@ int main()
     std::cout << std::endl;
     std::cout << "Enter the correct numbers to solve the puzzle to open the portal";
 
-    const int a = 4;
-    const int b = 3;
-    const int c = 2;
+    const int PuzzleA = 4;
+    const int PuzzleB = 3;
+    const int PuzzleC = 2;
 
-    const int sum = a + b + c;
-    const int product = a * b * c;
+    const int PuzzleSum = PuzzleA + PuzzleB + PuzzleC;
+    const int PuzzleProduct = PuzzleA * PuzzleB * PuzzleC;
 
     // Print sum and product to the terminal
     std::cout << std::endl;
     std::cout << "There are 3 numbers needed to solve the puzzle" << std::endl;
     std::cout << "The numbers in the puzzle add up to: " << sum << std::endl;
-    std::cout << "The numbers in the puzzle multiply to give:" << product << std::endl;
+    std::cout << "The numbers in the puzzle multiply to give: " << product << std::endl;
 
     return 0;
 }
