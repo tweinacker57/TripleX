@@ -1,14 +1,15 @@
 #include <iostream>
 
-void PrintIntroduction()
+void PrintIntroduction(int Difficulty)
 {
     std::cout << "\n\nYou are an adventurer who needs to solve the puzzle to open the mystical portal\n";
-    std::cout << "Enter the correct numbers to solve the puzzle to open the portal\n\n";
+    std::cout << "You're at level " << Difficulty;
+    std::cout << "\nEnter the correct numbers to solve each level to open the portal\n\n";
 }
-bool PlayGame()
+bool PlayGame(int Difficulty)
 {
      //Create the start of a game that asks an adventurer to solve the puzzle based on the sum and products of the variables provided
-    PrintIntroduction();
+    PrintIntroduction(Difficulty);
 
     const int PuzzleA = 4;
     const int PuzzleB = 3;
@@ -18,9 +19,9 @@ bool PlayGame()
     const int PuzzleProduct = PuzzleA * PuzzleB * PuzzleC;
 
     // Print sum and product to the terminal
-    std::cout << "There are 3 numbers needed to solve the puzzle" << std::endl;
-    std::cout << "\n+The numbers in the puzzle add up to: " << PuzzleSum << std::endl;
-    std::cout << "\n+The numbers in the puzzle multiply to give: " << PuzzleProduct << std::endl;
+    std::cout << "There are 3 numbers needed to solve the puzzle";
+    std::cout << "\n+ The numbers in the puzzle add up to: " << PuzzleSum;
+    std::cout << "\n+ The numbers in the puzzle multiply to give: " << PuzzleProduct << std::endl;
 
     // Store player guess
     int GuessA, GuessB, GuessC;
@@ -43,11 +44,17 @@ bool PlayGame()
 }
 int main()
 {
+    int LevelDifficulty = 1;
     while(true)
     {
-        bool bLevelComplete = PlayGame();
+        bool bLevelComplete = PlayGame(LevelDifficulty);
         std::cin.clear(); //Clears errors
-        std::cin.ignore(); 
+        std::cin.ignore();
+
+        if (bLevelComplete) 
+        {
+            ++LevelDifficulty;
+        } 
     }
 
     return 0;
