@@ -28,5 +28,10 @@ int main()
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
 
+    if (true)
+    {
+        std::cout << "You solved the puzzle!";
+    }
+
     return 0;
 }
