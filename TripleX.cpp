@@ -11,9 +11,9 @@ bool PlayGame(int Difficulty)
      //Create the start of a game that asks an adventurer to solve the puzzle based on the sum and products of the variables provided
     PrintIntroduction(Difficulty);
 
-    const int PuzzleA = 4;
-    const int PuzzleB = 3;
-    const int PuzzleC = 2;
+    const int PuzzleA = rand() % Difficulty + Difficulty;
+    const int PuzzleB = rand() % Difficulty + Difficulty;
+    const int PuzzleC = rand() % Difficulty + Difficulty;
 
     const int PuzzleSum = PuzzleA + PuzzleB + PuzzleC;
     const int PuzzleProduct = PuzzleA * PuzzleB * PuzzleC;
