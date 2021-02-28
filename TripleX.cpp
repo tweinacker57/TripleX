@@ -19,5 +19,8 @@ int main()
     std::cout << "The numbers in the puzzle add up to: " << PuzzleSum << std::endl;
     std::cout << "The numbers in the puzzle multiply to give: " << PuzzleProduct << std::endl;
 
+
+    int PlayerGuess;
+    
     return 0;
 }
