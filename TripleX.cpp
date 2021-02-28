@@ -1,7 +1,8 @@
 #include <iostream>
-int main()
+
+void PLayGame()
 {
-    //Create the start of a game that asks an adventurer to solve the puzzle based on the sum and products of the variables provided
+     //Create the start of a game that asks an adventurer to solve the puzzle based on the sum and products of the variables provided
     std::cout << "You are an adventurer who needs to solve the puzzle to open the mystical portal\n";
     std::cout << "Enter the correct numbers to solve the puzzle to open the portal\n\n";
 
@@ -29,12 +30,13 @@ int main()
     {
         std::cout << "\nYou solved the puzzle!";
     }
-
     else
     {
         std::cout << "\nYou solved incorrectly...";
     }
-    
-
+}
+int main()
+{
+    PLayGame();
     return 0;
 }
