@@ -21,6 +21,9 @@ int main()
 
 
     int PlayerGuess;
-    
+        std::cin >> PlayerGuess;
+        std::cout << std::endl;
+        std::cout << "You entered: " << PlayerGuess;
+
     return 0;
 }
