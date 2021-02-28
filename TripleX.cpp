@@ -2,7 +2,7 @@
 
 void PrintIntroduction()
 {
-    std::cout << "You are an adventurer who needs to solve the puzzle to open the mystical portal\n";
+    std::cout << "\n\nYou are an adventurer who needs to solve the puzzle to open the mystical portal\n";
     std::cout << "Enter the correct numbers to solve the puzzle to open the portal\n\n";
 }
 void PlayGame()
@@ -44,6 +44,8 @@ int main()
     while(true)
     {
         PlayGame();
+        std::cin.clear(); //Clears errors
+        std::cin.ignore(); 
     }
 
     return 0;
