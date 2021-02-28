@@ -20,10 +20,13 @@ int main()
     std::cout << "The numbers in the puzzle multiply to give: " << PuzzleProduct << std::endl;
 
 
-    int PlayerGuess;
-        std::cin >> PlayerGuess;
-        std::cout << std::endl;
-        std::cout << "You entered: " << PlayerGuess;
+    int GuessA, GuessB, GuessC;
+    std::cin >> GuessA;
+    std::cin >> GuessB;
+    std::cin >> GuessC;
+
+    int GuessSum = GuessA + GuessB + GuessC;
+    int GuessProduct = GuessA * GuessB * GuessC;
 
     return 0;
 }
