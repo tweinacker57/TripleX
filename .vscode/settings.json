@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "atomic": "cpp",
+        "limits": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
+    }
+}
