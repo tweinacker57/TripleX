@@ -45,7 +45,9 @@ bool PlayGame(int Difficulty)
 int main()
 {
     int LevelDifficulty = 1;
-    while(true)
+    int const MaxLevel = 10;
+    
+    while (LevelDifficulty <= MaxLevel)
     {
         bool bLevelComplete = PlayGame(LevelDifficulty);
         std::cin.clear(); //Clears errors
