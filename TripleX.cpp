@@ -28,7 +28,7 @@ int main()
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
 
-    if (true)
+    if (GuessSum == PuzzleSum && GuessProduct == PuzzleProduct)
     {
         std::cout << "You solved the puzzle!";
     }
