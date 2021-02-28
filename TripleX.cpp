@@ -16,8 +16,8 @@ int main()
     // Print sum and product to the terminal
     std::cout << std::endl;
     std::cout << "There are 3 numbers needed to solve the puzzle" << std::endl;
-    std::cout << "The numbers in the puzzle add up to: " << sum << std::endl;
-    std::cout << "The numbers in the puzzle multiply to give: " << product << std::endl;
+    std::cout << "The numbers in the puzzle add up to: " << PuzzleSum << std::endl;
+    std::cout << "The numbers in the puzzle multiply to give: " << PuzzleProduct << std::endl;
 
     return 0;
 }
