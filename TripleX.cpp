@@ -1,6 +1,6 @@
 #include <iostream>
 int main()
 {
-    std::cout << "Hello World!";
+    std::cout << "You are an adventurer who needs to solve the puzzle to open the mystical portal";
     return 0;
 }
